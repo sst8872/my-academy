@@ -1,5 +1,17 @@
+
+/* google fonts */
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400|Nanum+Gothic&subset=korean');
+
+/*
+ * font-family: 'Lato', sans-serif;
+ * font-family: 'Nanum Gothic', sans-serif;
+ *
+ */
+
+
 /* global variables */
 :root {
+    --html-font-family: 'Nanum Gothic', 'Lato', san-serif;
     --html-font-size: 16px;
     --html-text-color: #555;
 }
@@ -13,7 +25,8 @@
 }
 
 html {
-    font: normal var(--html-font-size) sans-serif;
+    font-family: var(--html-font-family);
+    font-size: normal var(--html-font-size);
     color: var(--html-text-color);
 }
 
@@ -39,6 +52,7 @@ a.btn {
     text-align: center;
     background-color: #3f51b5;
     opacity: 1;
+    letter-spacing: 0.1rem;
 }
 
 section {
@@ -129,7 +143,7 @@ header ul li {
     }
 
     header h2 {
-       margin-bottom: 15px;
+        margin-bottom: 15px;
     }
 }
 
@@ -149,7 +163,7 @@ header ul li {
     left: 0;
     width: 100%;
     height: 100%;
-    background: #80a3db url(../img/main.jpg) no-repeat center;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/main.png) no-repeat center fixed;
     background-size: cover;
     z-index: -1;
 }
@@ -174,9 +188,9 @@ header ul li {
 }
 
 @keyframes slidefade {
-   0% {
-       opacity: 0;
-   }
+    0% {
+        opacity: 0;
+    }
 
     100% {
         opacity: 1;
@@ -204,13 +218,13 @@ header ul li {
 
 /* destination starts */
 .small.one {
-    background: url(../img/mountain1.jpg); }
+    background: url(../img/winners1.jpg); }
 .large.two {
-    background: url(../img/mountain2.jpg); }
+    background: url(../img/winners2.jpg); }
 .large.three {
-    background: url(../img/mountain3.jpg); }
+    background: url(../img/winners3.jpg); }
 .small.four {
-    background: url(../img/mountain4.jpg); }
+    background: url(../img/winners4.jpg); }
 
 .destination .grid li {
     height: 350px;
@@ -307,10 +321,10 @@ header ul li {
 }
 /* contact ends */
 @media screen and (max-width: 1000px) {
-   .contact form input {
-       flex-basis: 100%;
-       margin: 0 0 20px 0;
-   }
+    .contact form input {
+        flex-basis: 100%;
+        margin: 0 0 20px 0;
+    }
 }
 
 
